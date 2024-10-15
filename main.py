@@ -1,31 +1,38 @@
 import tkinter as tk
 from tkinter import *
 
-root = tk.Tk()
-root.geometry("800x500")
-root.title("Księgarnia")
-root.iconbitmap("ksionszka.ico")
+# root = tk.Tk()
+# root.geometry("800x500")
+# root.title("Księgarnia")
+# root.iconbitmap("ksionszka.ico")
 
 
-root.mainloop()
-
-
-
-class Ksionszka():
-    def __init__(self, tytul, strony):
-        self.tytul = tytul
-        self.strony = strony
-
-Ksiega1 = Ksionszka("Hobbit", 390)
+# root.mainloop()
 
 
 
-class Lista():
+class Ksiegarnia1():
     def __init__(self):
-        self.lista = []
+        self.ksiegarnia = []
     def add(self, ksionszka):
-        (self.lista).append(ksionszka)
-        
+        self.ksiegarnia.append(ksionszka)
+    def show(self):
+        print(self.ksiegarnia)
+    def remove(self, miejsce):
+        self.ksiegarnia.remove(miejsce)
+    def edit(self, miejsce, tytul):
+        self.ksiegarnia[miejsce] = tytul
 
 
+class Ksiegarnia2():
+    def __init__(self):
+        self.ksiegarnia = []
+    def add(self, ksionszka):
+        self.ksiegarnia.append(ksionszka)
+    def show(self):
+        print(self.ksiegarnia)
+    def remove(self, miejsce):
+        self.ksiegarnia.remove(miejsce)
+    def edit(self, miejsce, tytul):
+        self.ksiegarnia[miejsce] = tytul
 
